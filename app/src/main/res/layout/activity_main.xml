@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="16dp"
+    android:background="@color/colorAccent"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
+
+    <TextView
+        android:id="@+id/povertyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am_poor"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/povertyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/povertyTextView"
+        android:src="@drawable/coal"/>
+
 
 </RelativeLayout>
